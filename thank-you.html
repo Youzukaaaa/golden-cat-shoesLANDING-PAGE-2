@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>شكراً على طلبك — حذاء البنت القطة اللامع</title>
+<meta name="description" content="تم إرسال طلبك بنجاح. الدفع عند الاستلام والتوصيل مجاني إلى جميع ولايات الجزائر.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FAF3E8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
+<script src="assets/tracking.js"></script>
+<style>
+  :root {
+    --ivory: #FFFBF5; --cream: #FAF3E8; --beige: #F1E4D1; --champagne: #D8B77F;
+    --blush: #F8E3E6; --rose: #B93A62; --brown: #3A2418; --brown-2: #6C5040;
+    --line: #E8D9C3; --ok: #1E7246;
+    --shadow: 0 18px 40px -22px rgba(92, 60, 25, .35);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; color: var(--brown);
+    background: radial-gradient(120% 60% at 50% 0%, var(--blush) 0%, var(--cream) 55%, var(--ivory) 100%);
+    font-family: "Cairo", "Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif; font-size: 16px; line-height: 1.65;
+  }
+  :focus-visible { outline: 3px solid var(--rose); outline-offset: 3px; border-radius: 6px; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 28px 16px 36px; }
+  .card { background: #fff; border: 2px solid var(--champagne); border-radius: 28px; box-shadow: var(--shadow); overflow: hidden; text-align: center; }
+  .card img { display: block; width: 100%; height: auto; }
+  .body { padding: 22px 18px 26px; }
+  .check { width: 60px; height: 60px; margin: -52px auto 8px; position: relative; border-radius: 50%; background: #fff; color: var(--ok); padding: 6px; box-shadow: var(--shadow); }
+  h1 { font-family: "El Messiri", "Cairo", serif; margin: 0 0 6px; font-size: clamp(25px, 6.6vw, 32px); color: var(--ok); line-height: 1.35; }
+  .lead { margin: 0 0 18px; font-size: 17px; color: var(--brown-2); }
+  .recap { text-align: right; background: var(--cream); border: 1px dashed var(--champagne); border-radius: 18px; padding: 14px 16px; margin: 0 0 16px; }
+  .recap h2 { margin: 0 0 6px; font-size: 17px; }
+  .recap dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; }
+  .recap dt { color: var(--brown-2); }
+  .recap dd { margin: 0; font-weight: 700; }
+  .recap dd.total { color: var(--rose); font-size: 20px; font-weight: 800; }
+  .chips { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chips li { background: var(--cream); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 15px; font-weight: 700; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; width: 100%; min-height: 54px;
+    border-radius: 999px; border: 2px solid var(--brown); background: #fff; color: var(--brown);
+    font: inherit; font-size: 18px; font-weight: 800; text-decoration: none;
+  }
+  .btn:hover { background: var(--cream); }
+  footer { text-align: center; font-size: 13px; color: var(--brown-2); padding: 0 16px 24px; }
+</style>
+</head>
+<body>
+<!-- Meta Pixel (no-JavaScript fallback). The pixel itself is loaded once by assets/tracking.js -->
+<noscript><img height="1" width="1" style="display:none" alt=""
+     src="https://www.facebook.com/tr?id=29588645320737181&amp;ev=PageView&amp;noscript=1"></noscript>
+<main class="wrap">
+  <div class="card">
+    <picture>
+      <source srcset="assets/final-pair.webp" type="image/webp">
+      <img src="assets/final-pair.jpg" width="900" height="900" alt="حذاء البنت القطة اللامع">
+    </picture>
+    <div class="body">
+      <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6"/></svg>
+      <h1>تم إرسال طلبك بنجاح! 🐱✨</h1>
+      <p class="lead">شكراً على ثقتك. وصلنا طلبك، ونشكروك على اختيارك.</p>
+
+      <!-- Filled from the order just sent; stays hidden if there is no summary (e.g. page refreshed). -->
+      <section class="recap" id="recap" hidden aria-labelledby="recapTitle">
+        <h2 id="recapTitle">ملخّص طلبك</h2>
+        <dl>
+          <dt>رقم الطلب</dt><dd id="rId"></dd>
+          <dt>المنتج</dt><dd id="rProduct"></dd>
+          <dt>المقاس</dt><dd id="rSizes"></dd>
+          <dt>عدد الأزواج</dt><dd id="rQty"></dd>
+          <dt>الولاية</dt><dd id="rWilaya"></dd>
+          <dt>تخلّصي عند الاستلام</dt><dd class="total" id="rTotal"></dd>
+        </dl>
+      </section>
+
+      <ul class="chips">
+        <li>🚚 التوصيل مجاني</li>
+        <li>💵 الدفع عند الاستلام</li>
+      </ul>
+
+      <a class="btn" href="index.html">رجوع للصفحة الرئيسية</a>
+    </div>
+  </div>
+</main>
+<footer>حذاء البنت القطة اللامع · التوصيل مجاني إلى جميع ولايات الجزائر · الدفع عند الاستلام</footer>
+
+<script>
+(function () {
+  'use strict';
+  var order = null;
+  try {
+    order = JSON.parse(sessionStorage.getItem('gc_last_order') || 'null');
+    // Read once: a refresh shows only the generic thank-you.
+    sessionStorage.removeItem('gc_last_order');
+  } catch (err) { order = null; }
+  if (!order || !order.qty) return;
+
+  var set = function (id, v) { document.getElementById(id).textContent = String(v); };
+  set('rId', order.orderId || '—');
+  set('rProduct', order.product || '');
+  set('rSizes', (order.sizes || []).join('، '));
+  set('rQty', order.qty === 1 ? 'زوج واحد' : order.qty === 2 ? 'زوجين' : order.qty + ' أزواج');
+  set('rWilaya', order.wilaya || '');
+  set('rTotal', order.total + ' دج');
+  document.getElementById('recap').hidden = false;
+
+  // Meta Pixel "Lead": this page only opens after Formspree accepted the order.
+  // Sent once per order id (eventID = order id, ready for Conversions API dedup).
+  // Does nothing until a Pixel ID is set in assets/tracking.js.
+  if (window.GCTrack) {
+    window.GCTrack.trackLeadOnce(order.orderId, {
+      value: order.total, currency: 'DZD', num_items: order.qty,
+      content_name: order.product, content_ids: [order.productId || 'GOLDEN-CAT-309611'], content_type: 'product'
+    });
+  }
+})();
+</script>
+</body>
+</html>
